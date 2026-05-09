@@ -11884,4 +11884,25 @@ hr {
   opacity: 1;
 }
 
+.zanimivost {
+  font-weight: lighter;
+}
+
+.domacinaslov {
+  font-size: 90px;
+}
+
+.gumb-zelen {
+  background-color: #628F00;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  min-height: 80px;
+}
+.gumb-zelen:hover {
+  opacity: 0.9;
+}
+
 /*# sourceMappingURL=style.css.map */

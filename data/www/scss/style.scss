@@ -28,3 +28,25 @@ hr{
     border: none;  
     opacity: 1;
 }
+
+.zanimivost{
+    font-weight:lighter;
+}
+
+.domacinaslov{
+    font-size:90px;
+}
+
+.gumb-zelen {
+    background-color: $konture;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px; // Zaobljeni robovi
+    cursor: pointer;
+    transition: 0.3s;
+    min-height: 80px;
+
+    &:hover {
+        opacity: 0.9; // Malo posvetli ob kliku
+    }
+}
