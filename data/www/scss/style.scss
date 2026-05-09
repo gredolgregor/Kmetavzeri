@@ -1,5 +1,30 @@
-$ozadje: #f4e1d2; // tvoja barva
+$ozadje: #0a2b06; 
+$tekst: #EAD39D;
+$konture: #628F00;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 body {
     background-color: $ozadje;
+    color:$tekst;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1 {
+    font-size:64px;
+    font-weight: bold;
+    text-align: start;
+}
+
+p {
+    font-size:36px;
+    font-weight: bold;
+    text-align: start;
+}
+
+hr{
+    height: 2px;
+    background-color: $konture;
+    border: none;  
+    opacity: 1;
 }
