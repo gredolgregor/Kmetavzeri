@@ -41,13 +41,13 @@ hr{
     background-color: $konture;
     color: white;
     padding: 20px 40px;
-    border-radius: 20px; // Zaobljeni robovi
+    border-radius: 20px; 
     cursor: pointer;
     transition: 0.3s;
     min-height: 80px;
 
     &:hover {
-        opacity: 0.9; // Malo posvetli ob kliku
+        opacity: 0.9;
     }
 }
 
@@ -61,9 +61,9 @@ hr{
     color: $konture !important;
     transition: 0.3s;
     
-    // Na telefonu malo zmanjšamo padding, da črta ne bo predaleč
+   
     @media (max-width: 991px) {
-      font-size: 30px !important; // Prilagodi, da ne bo preveliko na mobiju
+      font-size: 30px !important;
       padding: 15px 0 !important;
     }
 
@@ -79,12 +79,12 @@ hr{
     }
   }
 
-  // ČRTICE MED LINKI (Samo za telefon)
+
   .nav-item {
     @media (max-width: 1000px) {
-      border-bottom: 1px solid rgba($konture, 1); // Nežna črta kot <hr>
+      border-bottom: 1px solid rgba($konture, 1); 
       
-      // Odstranimo črto pri zadnjem elementu (ikoni), da ne zgleda čudno
+
       &:last-child {
         border-bottom: none;
       }
@@ -101,7 +101,7 @@ hr{
   .navbar-collapse {
     @media (max-width: 991px) {
       background-color: $ozadje;
-      padding-top: 10px; // Malo prostora zgoraj
+      padding-top: 10px; 
       padding-bottom: 20px;
     }
   }
@@ -110,7 +110,7 @@ hr{
 .noga-strani {
     background-color: $ozadje;
     border-top: 1px solid rgba($konture, 0.3);
-    min-height: 300px; // Določi minimalno višino footerja
+    min-height: 300px; 
     display: flex;
     align-items: center;
 
@@ -120,10 +120,10 @@ hr{
 
     .vr-line {
         width: 3px;
-        height: 220px; // Malo krajša črta izgleda bolj elegantno
+        height: 220px; 
         background-color: $konture;
         opacity: 0.5;
-        margin: 0; // Odstrani vse robove
+        margin: 0; 
     }
 
     .footer-naslov {
@@ -139,21 +139,19 @@ hr{
     .footer-tekst {
         color: $tekst;
         font-size: 18px;
-        margin-bottom: 0; // Prepreči, da zadnja vrstica odriva rob spodaj
+        margin-bottom: 0; 
         line-height: 1.6;
     }
 }
 
 
 .contact-section {
-  // Ozadje sekcije postane barva teksta (temno zelena)
   background-color: $tekst; 
   font-family: 'Bitter', serif;
-  padding: 80px 0; // Lep razmik zgoraj in spodaj
+  padding: 80px 0; 
   position: relative;
 
   .address-box {
-    // Barva celotnega besedila postane barva ozadja (peščena)
     color: $ozadje; 
     
     h2 {
@@ -166,7 +164,6 @@ hr{
       margin-bottom: 5px;
     }
 
-    // Podčrtaj pod naslovom (kot je na sliki pri "Padeški vrh 2")
     .text-underline {
       text-decoration: underline;
       text-underline-offset: 5px;
@@ -189,25 +186,25 @@ hr{
 
 
 .inquiry-section {
-  background-color: $tekst; // Temno zeleno ozadje
+  background-color: $tekst; 
   font-family: 'Bitter', serif;
 
   .text-light-beige {
-    color: $ozadje; // Peščena barva za glavni naslov
+    color: $ozadje; 
   }
 
   .contact-form {
     // Stil za vnosna polja
     .custom-input {
-      background-color: $ozadje !important; // Peščena barva polja
+      background-color: $ozadje !important; 
       border: none;
-      border-radius: 15px; // Močno zaobljeni robovi
+      border-radius: 15px; 
       padding: 12px 20px;
       font-weight: 600;
-      color: $tekst; // Barva teksta, ko pišeš v polje
+      color: $tekst;
 
       &::placeholder {
-        color: $tekst; // Barva placeholderja (napisov)
+        color: $tekst;
         opacity: 0.8;
       }
 
@@ -219,17 +216,100 @@ hr{
 
     // Gumb "Pošlji"
     .btn-send {
-      background-color: transparent;
-      color: $tekst;
-      border: 2px solid $konture; // Zelena obroba okoli gumba
-      border-radius: 12px;
-      padding: 8px 30px;
-      font-weight: bold;
-      transition: 0.3s;
+  background-color: transparent; 
+  color: $ozadje;              
+  border: 2px solid $konture !important;
+  border-radius: 12px;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
 
-      &:hover {
-        color: $konture;
-      }
+  &:hover {
+    background-color: $konture; 
+    color: white;              
+    border-color: $konture;
+  }
+
     }
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.room-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.left {
+    flex: 0 0 auto;
+    order: 1;
+}
+
+.left img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 12px solid #1B4D0E;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.room-text {
+    flex: 1;
+    max-width: 320px;
+    text-align: left;
+    order: 2;
+}
+
+.room-text p {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #1a1a1a;
+    margin-bottom: 25px;
+    font-weight: 500;
+}
+
+.room-text b {
+    display: block;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.right {
+    flex: 0 0 auto;
+    order: 3;
+}
+
+.right img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 12px solid #7CB342;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }

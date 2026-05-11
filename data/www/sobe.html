@@ -2,14 +2,14 @@
 <html lang="sl">
 <head>
     <meta charset="UTF-8">
-    <title>home</title>
+    <title>sobe</title>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
 
-<nav class="navbar navbar-expand-lg custom-navbar py-3">
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar py-3">
   <div class="container-fluid px-4 px-lg-5">
     
     <a class="navbar-brand" href="index.html">
@@ -48,58 +48,83 @@
       </ul>
     </div>
   </div>
-  
-</nav>
-
+</nav> 
 <hr class="w-75 mx-auto opacity-25 mt-0">
 
-    <div class="container-fluid text-center my-5">
-        
-        <img src="images/home_logo.png" alt="logo z slikami" class="col-6">
 
-        <h1 class="mb-4 container-fluid pt-5 col-9 domacinaslov">O kmetiji</h1>
-        
-        <p class="container-fluid col-9">Naša kmetija se nahaja na Padeškem vrhu ob poti iz Zreč proti Rogli. Od leta 1994 razvijamo turistično dejavnost, leta 1999 pa smo pridobili certifikat za ekološko kmetovanje. Gostom ponujamo 5 prijetnih sob in domačo kuhinjo z jedmi iz ekoloških sestavin. Z veseljem vas sprejmemo in vam ponudimo pristno doživetje narave ter domačnosti.</p>
+<!-- TOP ZELENI DEL -->
+<section class="top-section text-light">
+  <div class="container py-5">
+    <h2 class="text-green">Sobe</h2>
+    <p class="w-50">
+      Naše prijetne sobe vam nudijo miren oddih v objemu narave, stran od vsakdanjega vrveža. Obkrožene z zelenjem in svežim zrakom so popoln prostor za sprostitev in počitek.
+    </p>
+    <hr class="line">
+  </div>
+</section>
 
-        <hr class="container-fluid col-9 mt-5 mb-5">
-        
-        <!-- Glavni vsebnik, ki vse postavi navpično (flex-column) -->
-        <div class="d-flex flex-column align-items-center gap-4 pt-5">
-    
-    <!-- Zgornji del: Slika + Naslov (to že imaš) -->
-            <div class="d-flex justify-content-center align-items-center gap-3">
-                <img src="images/clovecek.png" alt="človeček" style="height: 120px; width: auto;">
-                <h1 class="mb-0 domacinaslov">Rezervacije</h1>
-            </div>
+<!-- BEŽ SEKCIJA -->
+<section class="rooms-section">
+  <div class="container text-center">
 
-    <!-- Spodnji del: Gumba drug ob drugem -->
-            <div class="d-flex justify-content-center gap-3 w-100">
-                <div class="gumb-zelen">
-                    <img src="images/calendar-icon.png" alt="koledarIkona" style="width: 30px;">
-                    <span>Datum</span>
-                </div>
-                <div class="gumb-zelen">
-                    <strong>Rezerviraj</strong>
-                </div>
-            </div>
+    <h4 class="mb-3">Izbira sobe</h4>
+    <h1 class="big-title">IZBIRATE<br>LAHKO<br>MED</h1>
 
-</div>
+    <div class="room-layout">
 
-<!-- Odstranil sem col-9 in dodal mx-auto -->
-<div class="d-flex align-items-center justify-content-center gap-4 pt-5 mx-auto" style="max-width: 80%;">
-    
-    <!-- LEVO: Slika -->
-    <img src="images/zanimivosti.png" alt="Zanimivosti" style="width: 850px; height: auto;">
+      <!-- LEVI KROG -->
+      <div class="left">
+        <img src="images/3.png">
+      </div>
 
-    <!-- DESNO: Blok za tekst -->
-    <div class="text-start">
-        <h1 class="mb-2 p-0">Zanimivosti</h1>
-        <p class="zanimivost">Doživite pristno povezanost z naravo in bogato ponudbo aktivnosti za vse okuse. Sprostite se ob dolgih sprehodih, odkrivanju zdravilnih zelišč, gob in gozdnih sadežev ali pa se podajte na kolesarjenje in jahanje konj. Za ljubitelje športa so na voljo tudi namizni tenis, košarka in badminton, pozimi pa vas pričakuje smučanje na Rogli ter razvajanje v Termah Zreče. Tukaj vsak najde nekaj zase.</p>
-    </div>
+      <!-- DESNI KROG -->
+      <div class="right">
+        <img src="images/4.png">
+      </div>
 
-</div>
+      <!-- TEKST -->
+      <div class="room-text">
+        <p><b>dvoposteljno</b><br>sobo z veliko zakonsko posteljo</p>
+
+        <p><b>3x triposteljno</b><br>sobo z veliko zakonsko posteljo in eno posteljo</p>
+
+        <p><b>štiriposteljno</b><br>sobo z veliko zakonsko posteljo in 2 enojnima</p>
+      </div>
 
     </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALI -->
+<section class="bottom-section">
+  <div class="container py-5">
+    <div class="row text-center">
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h5>ImePriimek</h5>
+          <p>Ta soba je res fantastična...</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom dark">
+          <h5>ImePriimek</h5>
+          <p>Ta soba je res fantastična...</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card-custom">
+          <h5>ImePriimek</h5>
+          <p>Ta soba je res fantastična...</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 <footer class="noga-strani py-5">
@@ -142,6 +167,5 @@
         </div>
     </div>
 </footer>
-
 </body>
 </html>

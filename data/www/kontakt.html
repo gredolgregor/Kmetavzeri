@@ -8,6 +8,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+<nav class="navbar navbar-expand-lg custom-navbar py-3">
+  <div class="container-fluid px-4 px-lg-5">
+    
+    <a class="navbar-brand" href="index.html">
+      <img src="images/header_logo.png" alt="Logo" style="width: 250px;" class="d-lg-none">
+      <img src="images/header_logo.png" alt="Logo" style="width: 350px;" class="d-none d-lg-block">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#vsebinaMenija">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="vsebinaMenija">
+      <ul class="navbar-nav ms-auto align-items-lg-center text-start text-lg-center">
+    
+        <li class="nav-item">
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="sobe.html">Sobe</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kulinarika.html">Kulinarika</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kontakt.html">Kontakt</a>
+        </li>
+
+       <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
+          <a class="nav-link p-0" href="https://www.facebook.com/Kmetijaramsak" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook d-lg-none" width="35" height="35" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-facebook d-none d-lg-block" width="55" height="55" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+            </svg>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+  
+</nav>
+
+<hr class="w-75 mx-auto opacity-25 mt-0">
+
 <section class="contact-section py-5" style="
     background-image: url('images/gorovje_linije.png'); 
     background-repeat: repeat-x; 
@@ -29,7 +74,7 @@
 
       <div class="col-lg-7">
          <div class="map-container"> 
-          <iframe src="https://www.google.com/maps/embed?..." width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2750.5014170405398!2d15.371293199999998!3d46.418940299999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f87703ce50a61%3A0xdf92d57e212c8840!2sTuristi%C4%8Dna%20kmetija%20Ram%C5%A1ak!5e0!3m2!1sen!2ssi!4v1778528740164!5m2!1sen!2ssi" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
@@ -68,6 +113,47 @@
     </div>
   </div>
 </section>
+
+<footer class="noga-strani py-5">
+    <div class="container d-flex align-items-center gap-5">
+        
+        <div class="footer-logo">
+            <img src="images/footer_logo.png" alt="Logotip Kmetija Ramšak" style="width: 280px; display: block;">
+        </div>
+
+        <div class="vr-line d-none d-lg-block"></div>
+
+        <div class="row w-100 ps-4 g-0 align-items-center">
+            
+            <div class="col-md-4">
+                <h3 class="footer-naslov">Lokacija</h3>
+                <p class="footer-tekst">
+                    Mernik Tomaž<br>
+                    Padeški vrh 2<br>3214 Zreče
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="footer-naslov">Kontakt</h3>
+                <p class="footer-tekst">
+                    <a href="mailto:info@kmetija-ramsak.si" class="footer-link">info@kmetija-ramsak.si</a><br>
+                    +386 41 891 629<br>
+                    +386 3 752 08 23
+                </p>
+            </div>
+
+            <div class="col-md-4">
+                <h3 class="footer-naslov">Delovni čas</h3>
+                <p class="footer-tekst">
+                    Od 1. 12. do 31. 03.<br>
+                    Od 1. 06. do 30. 09.<br>
+                    Tudi med prazniki.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
