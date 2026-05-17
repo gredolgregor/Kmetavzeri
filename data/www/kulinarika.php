@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kulinarika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<?php include 'header.php'; ?>  
+
+
+    <div class="container-fluid text-center my-5">
+        
+        <h1 class="mb-4 container-fluid pt-5 col-8">Kulinarika</h1>
+        
+        <p class="container-fluid col-8">Na naši kmetiji vas razvajamo z domačimi jedmi, pripravljenimi iz ekoloških sestavin po tradicionalnih receptih. Oživljamo okuse Pohorja in skoraj pozabljene jedi, kjer se prepletajo narava, tradicija in pristna domačnost.</p>
+
+        <img src="images/kulinarika1.png" alt="Kulinarika 1" class="col-8">
+
+        <hr class="container-fluid col-7 mt-5 mb-5">
+
+        <p class="container-fluid col-8">Pri nas kulinarika ni le spremljevalni del bivanja, temveč pomemben del doživetja kmetije, kjer vsak grižljaj pripoveduje zgodbo o domačnosti, kakovosti in spoštovanju do tradicije.</p>
+
+        <img src="images/kulinarika2.png" alt="Kulinarika 2" class="col-8">
+
+        
+
+    </div>
+
+
+<?php include 'footer.php'; ?>  
+
+</body>
+</html>

@@ -49,10 +49,6 @@
     </div>
 </footer>
 
-<a href="index.html">kulinarika</a>
-        <a href="domov.html">domov</a>
-        <a href="header.html">header</a>
-        <a href="footer.html">footer</a>
 </body>
 </html>
 </body>

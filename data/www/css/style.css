@@ -11900,9 +11900,14 @@ hr {
   cursor: pointer;
   transition: 0.3s;
   min-height: 80px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .gumb-zelen:hover {
   opacity: 0.9;
+  color: white;
 }
 
 .custom-navbar {
@@ -12016,5 +12021,161 @@ hr {
   }
 }
 
+.inquiry-section {
+  background-color: #EAD39D;
+  font-family: "Bitter", serif;
+}
+.inquiry-section .text-light-beige {
+  color: #0a2b06;
+}
+.inquiry-section .contact-form .custom-input {
+  background-color: #0a2b06 !important;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px;
+  font-weight: 600;
+  color: #EAD39D;
+}
+.inquiry-section .contact-form .custom-input::placeholder {
+  color: #EAD39D;
+  opacity: 0.8;
+}
+.inquiry-section .contact-form .custom-input:focus {
+  box-shadow: 0 0 10px rgba(10, 43, 6, 0.3);
+}
+.inquiry-section .contact-form .btn-send {
+  background-color: transparent;
+  color: #0a2b06;
+  border: 2px solid #628F00 !important;
+  border-radius: 12px;
+  padding: 10px 40px;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.3s;
+}
+.inquiry-section .contact-form .btn-send:hover {
+  background-color: #628F00;
+  color: white;
+  border-color: #628F00;
+}
+
+.rezervacija-forma label {
+  display: block;
+  color: #EAD39D;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+.rezervacija-forma input, .rezervacija-forma select, .rezervacija-forma textarea {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(98, 143, 0, 0.4);
+  border-radius: 10px;
+  color: #EAD39D;
+  padding: 12px 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.rezervacija-forma input:focus, .rezervacija-forma select:focus, .rezervacija-forma textarea:focus {
+  border-color: #628F00;
+  box-shadow: 0 0 0 3px rgba(98, 143, 0, 0.15);
+}
+.rezervacija-forma input::placeholder, .rezervacija-forma select::placeholder, .rezervacija-forma textarea::placeholder {
+  color: rgba(234, 211, 157, 0.35);
+}
+.rezervacija-forma input option, .rezervacija-forma select option, .rezervacija-forma textarea option {
+  background-color: #0a2b06;
+}
+.rezervacija-forma input[type=submit] {
+  width: auto;
+  background-color: #628F00;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 48px;
+  font-weight: 700;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.rezervacija-forma input[type=submit]:hover {
+  opacity: 0.88;
+}
+
+.rez-sekcija {
+  border: 1px solid rgba(98, 143, 0, 0.2);
+  border-radius: 16px;
+  padding: 36px 40px;
+  margin-bottom: 20px;
+}
+.rez-sekcija h3, .rez-sekcija .h3 {
+  font-family: "Bitter", serif;
+  color: #628F00 !important;
+  font-size: 1.1rem !important;
+  text-align: left !important;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(98, 143, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.room-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.left {
+  flex: 0 0 auto;
+  order: 1;
+}
+
+.left img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 12px solid #1B4D0E;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.room-text {
+  flex: 1;
+  max-width: 320px;
+  text-align: left;
+  order: 2;
+}
+
+.room-text p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.room-text b {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.right {
+  flex: 0 0 auto;
+  order: 3;
+}
+
+.right img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 12px solid #7CB342;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
 
 /*# sourceMappingURL=style.css.map */

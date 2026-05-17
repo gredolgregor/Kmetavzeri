@@ -11,7 +11,7 @@
 <nav class="navbar navbar-expand-lg custom-navbar py-3">
   <div class="container-fluid px-4 px-lg-5">
     
-    <a class="navbar-brand" href="index.html">
+    <a class="navbar-brand" href="index.php">
       <img src="images/header_logo.png" alt="Logo" style="width: 250px;" class="d-lg-none">
       <img src="images/header_logo.png" alt="Logo" style="width: 350px;" class="d-none d-lg-block">
     </a>
@@ -24,13 +24,16 @@
       <ul class="navbar-nav ms-auto align-items-lg-center text-start text-lg-center">
     
         <li class="nav-item">
-          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="sobe.html">Sobe</a>
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="index.php">Domov</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kulinarika.html">Kulinarika</a>
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="sobe.php">Sobe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kontakt.html">Kontakt</a>
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kulinarika.php">Kulinarika</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-lg-3 fs-4 display-lg-6 fw-bold" href="kontakt.php">Kontakt</a>
         </li>
 
        <li class="nav-item mt-3 mt-lg-0 ms-lg-3">
@@ -51,12 +54,5 @@
 </nav>
 
 <hr class="w-75 mx-auto opacity-25 mt-0">
-
-
-        <a href="index.html">kulinarika</a>
-        <a href="domov.html">domov</a>
-        <a href="header.html">header</a>
-        <a href="footer.html">footer</a>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
