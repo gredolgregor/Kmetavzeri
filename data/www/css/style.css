@@ -12025,6 +12025,9 @@ hr {
   background-color: #EAD39D;
   font-family: "Bitter", serif;
 }
+.inquiry-section h2.display-4, .inquiry-section .display-4.h2 {
+  color: #0a2b06 !important;
+}
 .inquiry-section .text-light-beige {
   color: #0a2b06;
 }
@@ -12121,61 +12124,217 @@ hr {
   margin-bottom: 20px;
 }
 
-.room-layout {
+.top-section .top-naslov {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 2rem !important;
+  font-weight: 700 !important;
+  color: #EAD39D !important;
+  text-align: left !important;
+}
+.top-section .top-opis {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  color: #EAD39D !important;
+  text-align: left !important;
+}
+.top-section hr.line {
+  height: 2px !important;
+  max-width: 200px;
+  margin-left: 0 !important;
+  opacity: 0.4 !important;
+}
+
+.rooms-section h4.rooms-podnaslov, .rooms-section .rooms-podnaslov.h4 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #0a2b06 !important;
+  text-align: center !important;
+  margin-bottom: 8px;
+}
+.rooms-section h1.big-title, .rooms-section .big-title.h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 3.2rem !important;
+  font-weight: 800 !important;
+  color: #0a2b06 !important;
+  line-height: 1.05 !important;
+  text-align: center !important;
+  margin-bottom: 40px;
+}
+.rooms-section .room-layout {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0;
+}
+.rooms-section .soba-slika {
+  width: 28%;
+  height: auto;
+  flex: 0 0 auto;
+}
+.rooms-section .room-text {
+  flex: 1;
+  padding: 0 40px;
+  text-align: left;
+}
+.rooms-section .room-text p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  line-height: 1.7 !important;
+  color: #0a2b06 !important;
+  margin-bottom: 20px !important;
+  text-align: left !important;
+}
+.rooms-section .room-text b {
+  display: block;
+  font-weight: 800 !important;
+}
+
+.bottom-section {
+  background-color: #0a2b06 !important;
+}
+.bottom-section .card-custom {
+  background: #d9c48f;
+  border: none;
+  border-radius: 10px;
+  padding: 24px 20px;
+  height: 100%;
+}
+.bottom-section .card-custom.dark {
+  background: rgb(6.8775510204, 29.5734693878, 4.1265306122);
+  border: 1px solid rgba(98, 143, 0, 0.3);
+}
+.bottom-section .card-custom.dark h5, .bottom-section .card-custom.dark .h5 {
+  color: #EAD39D !important;
+}
+.bottom-section .card-custom.dark p {
+  color: rgba(234, 211, 157, 0.85) !important;
+}
+.bottom-section .card-custom.dark .card-ikona {
+  color: #EAD39D !important;
+  border-color: rgba(234, 211, 157, 0.5) !important;
+}
+.bottom-section .card-custom .card-ikona {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 2px solid #628F00;
+  color: #628F00;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
-  margin-top: 40px;
+  margin: 0 auto 14px;
+}
+.bottom-section .card-custom h5, .bottom-section .card-custom .h5 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 1rem !important;
+  font-weight: 700 !important;
+  color: #0a2b06 !important;
+  text-align: center !important;
+  margin-bottom: 10px;
+}
+.bottom-section .card-custom p {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.85rem !important;
+  font-weight: 400 !important;
+  line-height: 1.6 !important;
+  color: #0a2b06 !important;
+  text-align: center !important;
+  margin: 0 !important;
 }
 
-.left {
-  flex: 0 0 auto;
-  order: 1;
+.admin-tabela {
+  border-collapse: collapse;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.9rem !important;
 }
-
-.left img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 12px solid #1B4D0E;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.room-text {
-  flex: 1;
-  max-width: 320px;
+.admin-tabela th {
+  background-color: #628F00;
+  color: #fff;
+  padding: 12px 14px;
+  font-weight: 700 !important;
   text-align: left;
-  order: 2;
+  font-size: 0.85rem !important;
+}
+.admin-tabela td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(234, 211, 157, 0.1);
+  color: #EAD39D !important;
+  font-size: 0.88rem !important;
+  font-weight: 400 !important;
+  text-align: left;
+  vertical-align: middle;
+}
+.admin-tabela td input, .admin-tabela td select {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(98, 143, 0, 0.5);
+  border-radius: 6px;
+  color: #EAD39D;
+  padding: 6px 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.85rem;
+  width: 100%;
+}
+.admin-tabela tr:hover td {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+.admin-tabela tr.vrstica-uredi td {
+  background-color: rgba(98, 143, 0, 0.08);
 }
 
-.room-text p {
-  font-size: 14px;
-  line-height: 1.8;
-  color: #1a1a1a;
-  margin-bottom: 25px;
-  font-weight: 500;
+.status-cakajoca {
+  color: #f0c040;
+  font-weight: 600;
 }
 
-.room-text b {
-  display: block;
+.status-potrjena {
+  color: #628F00;
+  font-weight: 600;
+}
+
+.status-preklicana {
+  color: #e05555;
+  font-weight: 600;
+}
+
+.status-zakljucena {
+  color: #EAD39D;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+.btn-admin {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 0.8rem;
   font-weight: 700;
-  margin-bottom: 4px;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  margin: 2px;
 }
-
-.right {
-  flex: 0 0 auto;
-  order: 3;
+.btn-admin.btn-uredi {
+  background-color: #628F00;
+  color: #fff;
 }
-
-.right img {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 12px solid #7CB342;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.btn-admin.btn-brisi {
+  background-color: transparent;
+  color: #e05555;
+  border: 1px solid #e05555;
+}
+.btn-admin.btn-shrani {
+  background-color: #628F00;
+  color: #fff;
+}
+.btn-admin:hover {
+  opacity: 0.85;
 }
 
 /*# sourceMappingURL=style.css.map */

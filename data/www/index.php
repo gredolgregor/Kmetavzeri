@@ -40,6 +40,11 @@
                     <strong>Rezerviraj</strong>
                 </a>
             </div>
+            <div class="d-flex justify-content-center gap-3 w-100">
+                <a href="adminres.php" class="gumb-zelen">
+                    <strong>Upravljanje rezervacij</strong>
+                </a>
+            </div>
 
 </div>
 

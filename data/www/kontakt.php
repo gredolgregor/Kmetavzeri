@@ -45,7 +45,7 @@
     <div class="row">
       
       <div class="col-lg-6">
-        <h2 class="display-4 fw-bold">Pošljite povpraševanje!</h2>
+        <h2 class="display-4 fw-bold" style="color: #0a2b06 !important;">Pošljite povpraševanje!</h2>
       </div>
 
       <div class="col-lg-6">

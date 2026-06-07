@@ -194,12 +194,16 @@ hr{
   background-color: $tekst; 
   font-family: 'Bitter', serif;
 
+  h2.display-4 {
+    color: $ozadje !important;
+  }
+
   .text-light-beige {
     color: $ozadje; 
   }
 
   .contact-form {
-    // Stil za vnosna polja
+   
     .custom-input {
       background-color: $ozadje !important; 
       border: none;
@@ -213,13 +217,13 @@ hr{
         opacity: 0.8;
       }
 
-      // Odstranimo moder rob ob kliku
+   
       &:focus {
         box-shadow: 0 0 10px rgba($ozadje, 0.3);
       }
     }
 
-    // Gumb "Pošlji"
+  
     .btn-send {
   background-color: transparent; 
   color: $ozadje;              
@@ -316,66 +320,206 @@ hr{
 
 
 
+// ── Prilepi na konec style.scss ───────────────────────────────
 
-
-
-
-
-
-
-.room-layout {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    margin-top: 40px;
+.top-section {
+    .top-naslov {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 2rem !important;
+        font-weight: 700 !important;
+        color: $tekst !important;
+        text-align: left !important;
+    }
+    .top-opis {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 1rem !important;
+        font-weight: 400 !important;
+        line-height: 1.65 !important;
+        color: $tekst !important;
+        text-align: left !important;
+    }
+    hr.line {
+        height: 2px !important;
+        max-width: 200px;
+        margin-left: 0 !important;
+        opacity: 0.4 !important;
+    }
 }
 
-.left {
-    flex: 0 0 auto;
-    order: 1;
+.rooms-section {
+    h4.rooms-podnaslov {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: #0a2b06 !important;
+        text-align: center !important;
+        margin-bottom: 8px;
+    }
+
+    h1.big-title {
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-size: 3.2rem !important;
+        font-weight: 800 !important;
+        color: #0a2b06 !important;
+        line-height: 1.05 !important;
+        text-align: center !important;
+        margin-bottom: 40px;
+    }
+
+    .room-layout {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 0;
+    }
+
+    .soba-slika {
+        width: 28%;                     // manjše kot prej (bilo 38%)
+        height: auto;
+        flex: 0 0 auto;
+    }
+
+    .room-text {
+        flex: 1;
+        padding: 0 40px;
+        text-align: left;
+
+        p {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 20px !important;
+            font-weight: 500 !important;
+            line-height: 1.7 !important;
+            color: #0a2b06 !important;
+            margin-bottom: 20px !important;
+            text-align: left !important;
+        }
+
+        b {
+            display: block;
+            font-weight: 800 !important;
+        }
+    }
 }
 
-.left img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 12px solid #1B4D0E;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+.bottom-section {
+    background-color: $ozadje !important;
+
+    .card-custom {
+        background: #d9c48f;
+        border: none;
+        border-radius: 10px;
+        padding: 24px 20px;
+        height: 100%;
+
+        &.dark {
+            background: darken($ozadje, 3%);
+            border: 1px solid rgba($konture, 0.3);
+            h5 { color: $tekst !important; }
+            p  { color: rgba($tekst, 0.85) !important; }
+            .card-ikona { color: $tekst !important; border-color: rgba($tekst, 0.5) !important; }
+        }
+
+        .card-ikona {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid $konture;
+            color: $konture;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 14px;
+        }
+
+        h5 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 1rem !important;
+            font-weight: 700 !important;
+            color: $ozadje !important;
+            text-align: center !important;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 0.85rem !important;
+            font-weight: 400 !important;
+            line-height: 1.6 !important;
+            color: $ozadje !important;
+            text-align: center !important;
+            margin: 0 !important;
+        }
+    }
 }
 
-.room-text {
-    flex: 1;
-    max-width: 320px;
-    text-align: left;
-    order: 2;
+
+
+
+// ── Dodaj na konec style.scss ─────────────────────────────────
+
+.admin-tabela {
+    border-collapse: collapse;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.9rem !important;
+
+    th {
+        background-color: $konture;
+        color: #fff;
+        padding: 12px 14px;
+        font-weight: 700 !important;
+        text-align: left;
+        font-size: 0.85rem !important;
+    }
+
+    td {
+        padding: 12px 14px;
+        border-bottom: 1px solid rgba($tekst, 0.1);
+        color: $tekst !important;
+        font-size: 0.88rem !important;
+        font-weight: 400 !important;
+        text-align: left;
+        vertical-align: middle;
+
+        input, select {
+            background-color: rgba(255,255,255,0.1);
+            border: 1px solid rgba($konture, 0.5);
+            border-radius: 6px;
+            color: $tekst;
+            padding: 6px 10px;
+            font-family: 'Montserrat Alternates', sans-serif;
+            font-size: 0.85rem;
+            width: 100%;
+        }
+    }
+
+    tr:hover td { background-color: rgba(255,255,255,0.03); }
+    tr.vrstica-uredi td { background-color: rgba($konture, 0.08); }
 }
 
-.room-text p {
-    font-size: 14px;
-    line-height: 1.8;
-    color: #1a1a1a;
-    margin-bottom: 25px;
-    font-weight: 500;
-}
+// Statusne značke
+.status-cakajoca   { color: #f0c040; font-weight: 600; }
+.status-potrjena   { color: $konture; font-weight: 600; }
+.status-preklicana { color: #e05555; font-weight: 600; }
+.status-zakljucena { color: $tekst;   font-weight: 600; opacity: 0.6; }
 
-.room-text b {
-    display: block;
+// Gumbi v tabeli
+.btn-admin {
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 0.8rem;
     font-weight: 700;
-    margin-bottom: 4px;
-}
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    margin: 2px;
 
-.right {
-    flex: 0 0 auto;
-    order: 3;
-}
+    &.btn-uredi  { background-color: $konture; color: #fff; }
+    &.btn-brisi  { background-color: transparent; color: #e05555; border: 1px solid #e05555; }
+    &.btn-shrani { background-color: $konture; color: #fff; }
 
-.right img {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    border: 12px solid #7CB342;
-    object-fit: cover;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    &:hover { opacity: 0.85; }
 }
